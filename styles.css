@@ -48,9 +48,11 @@ h1 {
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    display: inline-block;
 }
 h2 {
     color: darkblue;
+    background-color: #bdffd1;
 }
 /*Uzvar tads kuram ir vairak specifikacijas*/
 
@@ -115,3 +117,96 @@ h1, h2, h3 {
 #second-section{
     margin-top: 30px;
 }
+
+/*Elementi ar display:
+<a> = inline
+<img> = inline
+<label> = inline
+
+<h1> = block
+<ul> = block
+<nav> = block
+*/
+
+ul{
+    list-style-type: none;
+    background-color: lightcyan;
+    margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.izcelts{
+
+    border: 3px solid black;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+}
+
+/* Ar display "inline-block" span mainijas un daboja width un height 200px un 40px */
+
+label{
+    display: block;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* margin: 0 auto nestradaja, kamer attels bija inline, jo img bija viena rinda ar citiem elementiem un
+nebija iespejams neko atdalit ar margin. */
+
+h4{
+    font-size: 28px;
+}
+
+.display-none{
+    /*display: none;*/
+}
+
+.visibility-hidden{
+    /*visibility: hidden;*/
+}
+
+/* Elements ar display none pavisam pazuda no majaslapas bet elements ar visibility hidden palika
+tomer nebija redzams, nevareja to select bet ta vieta kur vins atradijas palika atdalita */
+
+/* 
+
+Display: block
+a) Ja, jauna rinda sakas.
+b) Height strada bet width nestrada jo block aiznem visu lapas width
+c) Maksimali
+
+Display: inline
+a) Nee.
+b) By default efekta nebus
+c) Tas aiznem tik daudz platuma cik nepieciesams saturam
+ 
+Display: inline-block
+a) Nee
+b) Ja, width un height strada
+c) Tas aiznem tik daudz platuma cik nepieciesams saturam
+ 
+*/
+
+/* Papildu uzdevumi */
+
+/* Fons stiepjas pa visu lapas platumu jo h2 elementam id display block by default.
+Mainijot to uz inline-bloc, fonam bus vienadz platums ka tekstam ieks h2.
+*/
