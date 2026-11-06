@@ -210,3 +210,35 @@ c) Tas aiznem tik daudz platuma cik nepieciesams saturam
 /* Fons stiepjas pa visu lapas platumu jo h2 elementam id display block by default.
 Mainijot to uz inline-bloc, fonam bus vienadz platums ka tekstam ieks h2.
 */
+
+.navigation{
+    display: flex;
+    gap: 150px;
+    width: 500px;
+    justify-content: center;
+}
+
+.nav_element{
+    display: inline-block;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.vizitkarte{
+    border: 2px solid black;
+    display: flex;
+    gap: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px green;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.vizitkarte p{
+    flex: 1 1 220px;
+}
